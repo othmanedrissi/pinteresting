@@ -1,6 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 $body-bg: #ecf0f1;
-$navbar-inverse-link-color: white;
+$font-family-sans-serif:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-default-bg: #333333;
+$navbar-default-brand-color: white;
+$navbar-height: 45px;
 $brand-primary: #f39c12;
-$jumbotron-bg: #ecf0f1;
+$btn-default: white;
+$jumbotron-bg: white;
+
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: light;
+     color: white;
+}
