@@ -13,6 +13,8 @@ gem 'devise', '~> 4.0.0.rc2'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '~> 2'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'video-js-rails', '~> 4.3', '>= 4.3.0.1'
+#gem 'ffmpeg-ruby', '~> 0.1.3'
 
 group :development, :test do
      gem 'sqlite3'

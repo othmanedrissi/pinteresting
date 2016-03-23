@@ -78,6 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { host: 'https://otdrqe.herokuapp.com/' }
 
+  config.assets.precompile += %w( video-js.swf vjs.eot vjs.svg vjs.ttf vjs.woff )
+
   # Sets Paperclip to upload images to Qmazon S3
   #config.paperclip_defaults = {
   #:storage => :s3,

@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
-    @pins = Pin.all
+    @pins = Pin.all#.order("created_at DESC") #For reverse chronological order
   end
 
   def show
@@ -25,6 +25,20 @@ class PinsController < ApplicationController
       render :new
     end
   end
+
+  #def create
+   # @movie = Movie.create(movie_params)
+   # @movie.user = current_user
+ 
+   # if @movie.save
+    #  render :json => {
+    #    :status => :redirect,
+    #    :to => movie_path(@movie.id)
+    #  }.to_json
+   # else
+    #  render 'new'
+   # end
+ # end
 
   def update
     if @pin.update(pin_params)
